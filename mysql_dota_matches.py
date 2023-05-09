@@ -8,7 +8,7 @@ pd.options.display.max_columns = 50
 print('Starting...')
 
 # MySQL
-conn = pymysql.connect(host='127.0.0.1', user='root', passwd='P00pstain',
+conn = pymysql.connect(host='127.0.0.1', user='root', passwd='xxxxxxx',
 					    db='mysql', charset='utf8')
 cur = conn.cursor()
 cur.execute('USE dota2analysis')
@@ -18,7 +18,7 @@ account_id = 20122248
 games_won = {"win": 1} # Games I won
 
 sess = requests.Session()
-html = f"https://api.opendota.com/api/players/{account_id}/matches?api_key=d90cf860-d88a-4ebb-aaac-58f0394887ff"
+html = f"https://api.opendota.com/api/players/{account_id}/matches?api_key=API_KEY"
 response = sess.get(html, params=games_won)
 content = response.content.decode("utf-8")
 wins = json.loads(content)
