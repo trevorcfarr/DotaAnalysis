@@ -14,7 +14,7 @@ cur.execute('USE dota2analysis')
 
 # API Query for Heroes
 sess = requests.Session()
-html = r"https://api.opendota.com/api/heroes?api_key=d90cf860-d88a-4ebb-aaac-58f0394887ff"
+html = r"https://api.opendota.com/api/heroes?api_key=API_KEY"
 response = sess.get(html)
 
 content = response.content.decode("utf-8")
