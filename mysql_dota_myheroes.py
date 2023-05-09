@@ -5,7 +5,7 @@ import pandas as pd
 
 print('Starting...')
 
-conn = pymysql.connect(host='127.0.0.1', user='root', passwd='P00pstain',
+conn = pymysql.connect(host='127.0.0.1', user='root', passwd='xxxxxxx',
 						db='mysql', charset='utf8')
 cur = conn.cursor()
 cur.execute('USE dota2analysis')
@@ -14,7 +14,7 @@ account_id = 20122248
 
 # API Query for Heroes
 sess = requests.Session()
-html = f"https://api.opendota.com/api/players/{account_id}/heroes?api_key=d90cf860-d88a-4ebb-aaac-58f0394887ff"
+html = f"https://api.opendota.com/api/players/{account_id}/heroes?api_key=API_KEY"
 response = sess.get(html)
 
 content = response.content.decode("utf-8")
