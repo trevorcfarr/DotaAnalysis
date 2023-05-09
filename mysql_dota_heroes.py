@@ -7,7 +7,7 @@ import cryptography
 
 print('Starting...')
 
-conn = pymysql.connect(host='127.0.0.1', user='root', passwd='P00pstain',
+conn = pymysql.connect(host='127.0.0.1', user='root', passwd='xxxxxx',
 						db='mysql', charset='utf8')
 cur = conn.cursor()
 cur.execute('USE dota2analysis')
